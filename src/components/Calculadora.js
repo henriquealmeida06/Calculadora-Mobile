@@ -13,37 +13,43 @@ function Calculadora(){
     const [usarSubtracao, setUsarSubtracao] = useState(false)
     const [usarMultiplicacao, setUsarMultiplicacao] = useState(false)
     const [usarDivisao, setUsarDivisao] = useState(false)
+  
+    
 
     
     function adicionarNumero(e){
         
-        setValor('')
-        const numero = e.target.value
+        
+        const numero = e.target.value;
+        
         setValor(valor + numero)
         setResultado(valor+numero)
         setUsarAdicao(false)
         setUsarSubtracao(false)
         setUsarMultiplicacao(false)
         setUsarDivisao(false)
+        setUsarVirgula(false)
     }
     function limparNumeros(){
         setValor('')
     }
     function deletarNumero(){
         const novaExpressao = [...valor]
-        const expressaoSemUltimo = novaExpressao.slice(0,-1);
-        setValor(expressaoSemUltimo)
+        setValor(novaExpressao.slice(0, -1));
         setUsarAdicao(false)
     }
 
     function resultadoFinal(){
+       
+        {
         const res = eval(valor)
         setResultado(res)
+    }
          
     }
     function adicionarVirgula(){
         if(!usarVirgula){
-            setValor(valor + ',')
+            setValor(valor + '.')
             setUsarVirgula(true)
         }
 
@@ -79,6 +85,19 @@ function Calculadora(){
             setUsarDivisao(true)
         }
     }
+
+    function adicionarPorcentagem(e){
+        const calcular = e.target.value;
+        const res = eval(valor+calcular)
+        setValor(res)
+        setResultado(res)
+        
+        
+        
+        
+    }
+    
+    
     
     
    
@@ -112,7 +131,7 @@ function Calculadora(){
             <div className={styles.teclado}>
                 <Button texto="C" onClick={()=>limparNumeros()}/>
                 <Button onClick={deletarNumero}><p className={styles.icone}><FiDelete/></p></Button>
-                <Button texto="%" value="%"/>
+                <Button texto="%" value={'/100'} onClick={adicionarPorcentagem}/>
                 <Button texto="&divide;" value="/" onClick={adicionarDivisao}/>
                 <Button estilo={styles.buttonNumeros} texto="7" value={7} onClick={adicionarNumero}/>
                 <Button estilo={styles.buttonNumeros} texto="8" value={8} onClick={adicionarNumero}/>
@@ -128,7 +147,7 @@ function Calculadora(){
                 <Button texto="+" value="+" onClick={adicionarAdicao}/>
                 <Button texto="tec"/>
                 <Button estilo={styles.buttonNumeros} texto="0" value={0} onClick={adicionarNumero}/>
-                <Button estilo={styles.buttonNumeros} texto="," value={','} onClick={adicionarVirgula}/>
+                <Button estilo={styles.buttonNumeros} texto="." value={'.'} onClick={adicionarVirgula}/>
                 <Button estilo={styles.buttonIgualdade}texto="=" onClick={resultadoFinal}/>
                 
 
