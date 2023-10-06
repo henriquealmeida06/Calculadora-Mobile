@@ -89,7 +89,7 @@ function Calculadora(){
     function adicionarPorcentagem(e){
         const calcular = e.target.value;
         const res = eval(valor+calcular)
-        setValor(res)
+        setValor(valor+"%")
         setResultado(res)
         
         
