@@ -35,8 +35,8 @@ function Calculadora(){
     }
     function deletarNumero(){
         const novaExpressao = [...valor]
-        setValor(novaExpressao.slice(0, -1));
-        setUsarAdicao(false)
+        novaExpressao.pop()
+        setValor(novaExpressao)
     }
 
     function resultadoFinal(){
