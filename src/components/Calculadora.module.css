@@ -4,6 +4,7 @@ body{
     align-items: center;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, rgb(69, 69, 238) 0%, rgb(155, 155, 248)0%);
 }
 
 .container{

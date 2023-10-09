@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 function Calculadora(){
 
-    const [valor, setValor] = useState([])
+    const [valor, setValor] = useState('')
     const [resultado, setResultado] = useState(0)
     const [usarVirgula, setUsarVirgula] = useState(false)
     const [usarAdicao, setUsarAdicao] = useState(false)
@@ -18,8 +18,7 @@ function Calculadora(){
 
     
     function adicionarNumero(e){
-        
-        
+           
         const numero = e.target.value;
         
         setValor(valor + numero)
@@ -34,9 +33,8 @@ function Calculadora(){
         setValor('')
     }
     function deletarNumero(){
-        const novaExpressao = [...valor]
-        novaExpressao.pop()
-        setValor(novaExpressao)
+        const novoValor = valor.slice(0,-1);
+        setValor(novoValor)
     }
 
     function resultadoFinal(){
