@@ -39,10 +39,10 @@ function Calculadora(){
 
     function resultadoFinal(){
        
-        {
+        
         const res = eval(valor)
         setResultado(res)
-    }
+    
          
     }
     function adicionarVirgula(){
