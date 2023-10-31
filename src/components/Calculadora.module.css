@@ -43,23 +43,6 @@ body {
   background-color: black;
 }
 
-/* Celular XR*/
-
-@media screen and (max-width: 414px) {
-  .teclado {
-    gap: 20px;
-  }
-  .container {
-    max-width: 42vh;
-    min-height: 80vh;
-    margin-top: -30px;
-    margin-right: 0px;
-  }
-  .valorResultado {
-    margin-bottom: 160px;
-  }
-}
-
 .icone {
   display: flex;
   justify-content: center;
@@ -124,4 +107,24 @@ body {
   align-items: end;
   width: 200px;
   height: 505px;
+}
+@media (min-width: 320px) {
+  .teclado {
+  }
+  .container {
+    min-width: 49vh;
+  }
+  .valorResultado {
+    margin-bottom: -50px;
+  }
+}
+@media (min-width: 1281px) {
+  .teclado {
+    gap: 10px;
+  }
+  .container {
+    min-width: 49vh;
+  }
+  .valorResultado {
+  }
 }
