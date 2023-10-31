@@ -128,3 +128,13 @@ body {
   .valorResultado {
   }
 }
+@media (orientation: landscape) {
+  .teclado {
+    gap: 10px;
+  }
+  .container {
+    min-width: 100vh;
+  }
+  .valorResultado {
+  }
+}
