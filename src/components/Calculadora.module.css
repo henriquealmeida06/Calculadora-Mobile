@@ -108,12 +108,45 @@ body {
   width: 200px;
   height: 505px;
 }
-@media (max-width: 390px) {
+@media (max-width: 320px) {
   .container {
-    max-width: 43vh;
+    max-width: 40vh;
   }
   .teclado {
     gap: 15px;
+  }
+  .valorResultado {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 45vh;
+  }
+  .teclado {
+    gap: 25px;
+  }
+  .valorResultado {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 48vh;
+  }
+  .teclado {
+    gap: 24px;
+  }
+  .valorResultado {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 801px) {
+  .container {
+    max-width: 48vh;
+  }
+  .teclado {
+    gap: 24px;
   }
   .valorResultado {
     margin-bottom: 120px;
