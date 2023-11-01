@@ -108,3 +108,14 @@ body {
   width: 200px;
   height: 505px;
 }
+@media (max-width: 390px) {
+  .container {
+    max-width: 43vh;
+  }
+  .teclado {
+    gap: 15px;
+  }
+  .valorResultado {
+    margin-bottom: 120px;
+  }
+}
