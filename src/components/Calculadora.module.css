@@ -123,6 +123,9 @@ body {
   .container {
     max-width: 45vh;
   }
+  body {
+    max-height: 93vh;
+  }
   .teclado {
     gap: 25px;
   }
