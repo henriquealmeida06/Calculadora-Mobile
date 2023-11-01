@@ -108,21 +108,3 @@ body {
   width: 200px;
   height: 505px;
 }
-@media (min-width: 320px) {
-  .teclado {
-  }
-  .container {
-    min-width: 49vh;
-  }
-  .valorResultado {
-    margin-bottom: -50px;
-  }
-}
-@media (min-width: 1281px) {
-  .teclado {
-    gap: 10px;
-  }
-  .container {
-    min-width: 49vh;
-  }
-}
