@@ -102,31 +102,31 @@ function Calculadora(){
     
    
     return(
-        <div className={styles.container}>
-            <div className={styles.visor}>
+        <div className="border-4 border-solid border-black p-1 h-vh90 rounded-px18 bg-black w-vh47">
+            <div className="flex justify-end items-end pb-7 pr-2 mt-10 mr-3 ml-3 border-b-px1 font-roboto1 border-cinzaVisor h-vh35 mb-3">
                 {valor === 0?(null
                     
 
                 ):
-                <p className={styles.valorDigitado}>{valor}</p>
+                <p className="text-white text-4xl font-semibold fixed mb-6">{valor}</p>
 
                 
             }
                 
                 
-                <div className={styles.divResultados}>
+                <div className="flex flex-col justify-center items-end w-52 h-40">
                {valor == 0?(
-                <p className={styles.valor2}>0</p>
+                <p className="text-white text-px40 font-semibold h-screen mt-36">0</p>
                
                 ):(
                     
-                    <p className={styles.valorResultado}>{`=${resultado}`}</p>
+                    <p className="text-gray-500 mt-40">{`=${resultado}`}</p>
                     )
             }
             </div>
 
             </div>
-            <div className={styles.teclado}>
+            <div className="grid grid-cols-4 justify-items-center ">
                 <Button texto="C" onClick={()=>limparNumeros()}/>
                 <Button onClick={deletarNumero}><p className={styles.icone}><FiDelete/></p></Button>
                 <Button texto="%" value={'/100'} onClick={adicionarPorcentagem}/>

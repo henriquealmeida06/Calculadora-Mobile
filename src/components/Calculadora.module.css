@@ -57,7 +57,7 @@ body {
   position: fixed;
 }
 .valorResultado {
-  margin-top: 76vh;
+  margin-top: vh;
   color: grey;
 }
 .valor2 {
@@ -108,6 +108,7 @@ body {
   width: 200px;
   height: 505px;
 }
+
 @media (max-width: 320px) {
   .container {
     max-width: 40vh;
