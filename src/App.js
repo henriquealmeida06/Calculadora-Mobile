@@ -1,9 +1,9 @@
 import Calculadora from './components/Calculadora';
-import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
+    <div className="App flex justify-center items-center h-screen font-roboto1 bg-purple-400">
       <Calculadora/>
     
     </div>

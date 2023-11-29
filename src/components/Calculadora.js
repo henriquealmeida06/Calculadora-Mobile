@@ -1,4 +1,3 @@
-import styles from './Calculadora.module.css'
 import Button from './Button'
 import {FiDelete} from 'react-icons/fi'
 import { useState } from 'react'
@@ -126,27 +125,27 @@ function Calculadora(){
             </div>
 
             </div>
-            <div className="grid grid-cols-4 justify-items-center ">
-                <Button texto="C" onClick={()=>limparNumeros()}/>
-                <Button onClick={deletarNumero}><p className={styles.icone}><FiDelete/></p></Button>
-                <Button texto="%" value={'/100'} onClick={adicionarPorcentagem}/>
-                <Button texto="&divide;" value="/" onClick={adicionarDivisao}/>
-                <Button estilo={styles.buttonNumeros} texto="7" value={7} onClick={adicionarNumero}/>
-                <Button estilo={styles.buttonNumeros} texto="8" value={8} onClick={adicionarNumero}/>
-                <Button estilo={styles.buttonNumeros} texto="9" value={9} onClick={adicionarNumero}/>
-                <Button texto="&#215;" value="*" onClick={adicionarMultiplicacao}/>
-                <Button estilo={styles.buttonNumeros} texto="4" value={4} onClick={adicionarNumero}/>
-                <Button estilo={styles.buttonNumeros} texto="5" value={5} onClick={adicionarNumero}/>
-                <Button estilo={styles.buttonNumeros} texto="6" value={6} onClick={adicionarNumero}/>
-                <Button texto="-" value="-" onClick={adicionarSubtracao}/>
-                <Button estilo={styles.buttonNumeros} texto="1" value={1} onClick={adicionarNumero}/>
-                <Button estilo={styles.buttonNumeros} texto="2" value={2} onClick={adicionarNumero}/>
-                <Button estilo={styles.buttonNumeros} texto="3" value={3} onClick={adicionarNumero}/>
-                <Button texto="+" value="+" onClick={adicionarAdicao}/>
-                <Button texto="tec"/>
-                <Button estilo={styles.buttonNumeros} texto="0" value={0} onClick={adicionarNumero}/>
-                <Button estilo={styles.buttonNumeros} texto="." value={'.'} onClick={adicionarVirgula}/>
-                <Button estilo={styles.buttonIgualdade}texto="=" onClick={resultadoFinal}/>
+            <div className="grid grid-cols-4 justify-items-center font-roboto1">
+                <Button estilo="text-laranjaNumeros p-px10 rounded-full text-2xl mb-2 h-12 w-12 cursor-pointer border-none flex justify-center items-center" texto="C" onClick={()=>limparNumeros()}/>
+                <Button estilo="text-laranjaNumeros p-px10 rounded-full text-2xl mb-2 h-12 w-12 cursor-pointer flex justify-center items-center" onClick={deletarNumero}><p className=""><FiDelete/></p></Button>
+                <Button estilo="text-laranjaNumeros rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="%" value={'/100'} onClick={adicionarPorcentagem}/>
+                <Button estilo="text-laranjaNumeros rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="&divide;" value="/" onClick={adicionarDivisao}/>
+                <Button estilo="text-white rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="7" value={7} onClick={adicionarNumero}/>
+                <Button estilo="text-white rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="8" value={8} onClick={adicionarNumero}/>
+                <Button estilo="text-white rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="9" value={9} onClick={adicionarNumero}/>
+                <Button estilo="text-laranjaNumeros rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="&#215;" value="*" onClick={adicionarMultiplicacao}/>
+                <Button estilo="text-white rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="4" value={4} onClick={adicionarNumero}/>
+                <Button estilo="text-white rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="5" value={5} onClick={adicionarNumero}/>
+                <Button estilo="text-white rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="6" value={6} onClick={adicionarNumero}/>
+                <Button estilo="text-laranjaNumeros rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="-" value="-" onClick={adicionarSubtracao}/>
+                <Button estilo="text-white rounded-full text-2xl h-12 w-12  mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="1" value={1} onClick={adicionarNumero}/>
+                <Button estilo="text-white rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="2" value={2} onClick={adicionarNumero}/>
+                <Button estilo="text-white rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="3" value={3} onClick={adicionarNumero}/>
+                <Button estilo="text-laranjaNumeros rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="+" value="+" onClick={adicionarAdicao}/>
+                <Button estilo=" text-laranjaNumeros rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center"texto="tec"/>
+                <Button estilo="text-white rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="0" value={0} onClick={adicionarNumero}/>
+                <Button estilo="text-white rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer p-px10 flex justify-center items-center" texto="." value={'.'} onClick={adicionarVirgula}/>
+                <Button estilo="rounded-full rounded-full text-2xl h-12 w-12 mb-2 cursor-pointer bg-laranjaNumeros text-white p-px10 flex justify-center items-center"texto="=" onClick={resultadoFinal}/>
                 
 
             </div>

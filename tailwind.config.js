@@ -24,6 +24,23 @@ module.exports = {
       },
       fontFamily: {
         'roboto1': '[Roboto, sans-serif]'
+      },
+      colors: {
+        'laranjaNumeros': '#ff6017',
+      },
+      backgroundColor: {
+        'azulGradiente1': '#4545EE',
+        'azulGardiente2': 'rgb(155, 155, 248)'
+      },
+      gradientColorStops: {
+        'azulGradiente1': '#9b9bf8',
+        'azulGardiente2': '#9b9bf8',
+      },
+      backgroundColor: {
+        'laranjaNumeros': '#ff6017',
+      },
+      padding: {
+        'px10': '10px'
       }
     },
   },
