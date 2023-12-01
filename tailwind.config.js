@@ -3,12 +3,19 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        mc: '312px',
+      },
       height: {
         'vh90': '93vh',
         'vh35': '35vh',
+        'vh83': '83vh',
+        'vh89': '89vh',
+        'vh92': '92vh',
       },
       width: {
         'vh47': '47vh',
+        'px350': '350px'
       },
       borderColor: {
         'cinzaVisor': '#242222',
