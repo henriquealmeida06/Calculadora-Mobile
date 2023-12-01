@@ -102,7 +102,7 @@ function Calculadora(){
    
     return(
         <div className="border-4 border-solid border-black p-1 rounded-px18 bg-black mc:w-80 md:w-72">
-            <div className="flex justify-end items-end pb-7 pr-2 mt-10 mr-3 ml-3 border-b-px1 font-roboto1 border-cinzaVisor h-vh35 mb-3">
+            <div className="flex justify-end items-end pb-7 pr-2 mt-10 mr-3 ml-3 border-b-px1 font-roboto1 border-cinzaVisor mc:h-60  md:h-56 mb-3">
                 {valor === 0?(null
                     
 
