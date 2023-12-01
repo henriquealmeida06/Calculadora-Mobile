@@ -12,6 +12,7 @@ module.exports = {
         'vh83': '83vh',
         'vh89': '89vh',
         'vh92': '92vh',
+        'px270': '270px'
       },
       width: {
         'vh47': '47vh',
